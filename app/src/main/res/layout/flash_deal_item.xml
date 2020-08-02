@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgFlashDeal"
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/demo3" />
+
+    <TextView
+        android:id="@+id/tvPriceFlashDeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="8900đ"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFlashDeal" />
+
+    <ProgressBar
+        android:id="@+id/pBFlashDeal"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:progress="20"
+        android:progressDrawable="@drawable/custom_pb_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceFlashDeal" />
+
+    <TextView
+        android:id="@+id/tvOrdered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vừa mở bán"
+        android:textColor="@android:color/white"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pBFlashDeal"
+        app:layout_constraintEnd_toEndOf="@+id/pBFlashDeal"
+        app:layout_constraintStart_toStartOf="@+id/pBFlashDeal"
+        app:layout_constraintTop_toTopOf="@+id/pBFlashDeal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
